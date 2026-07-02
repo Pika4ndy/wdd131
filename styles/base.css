@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter_28pt-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter_28pt-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+} */
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter_28pt-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url(../fonts/Noto_Serif/NotoSerif-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #213885;
+    --primary-color-alt: #081849;
+    --secondary-color: #ECDFD2;
+    --secondary-color-alt: #CCCACC;
+    --accent-color: #ff0;
+    --accent-color2: #ffff55;
+    --text-on-primary: white;
+    --text-on-secondary: black;
+    --heading-font: "Noto Serif", Cambria, Georgia, serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+header nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+header a {
+    color: var(--text-on-secondary);
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: block;
+    list-style: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+main {
+    margin: 0 auto 75px;
+    min-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+}
+
+article {
+    clear: right;
+    max-width: 600px;
+}
+
+article h3 {
+    border-bottom: 1px solid gray;
+    padding: .5rem;
+    margin: 0 3rem;
+    text-align: center;
+}
+
+article figure {
+    float: left;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Classes */
+.card-container {
+    display: grid;
+    justify-content: center;
+    margin: 1rem;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border: 2px solid gray;
+    border-radius: 1rem;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color-alt);
+    color: var(--text-on-primary);
+    padding: 1rem;
+    z-index: -10;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    float: right;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.card p {
+    padding: 1rem;
+    margin: .75rem;
+    line-height: 30px;
+}
+
+.card h3 {
+    text-align:justify;
+    margin: 1rem;
+}
+
+.card ul {
+    margin: 1rem 3rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+/* Ids */
+#course-title {
+    display: block;
+    color: var(--text-on-primary);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0.5rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#lastModified {
+    color: var(--accent-color);
+}
