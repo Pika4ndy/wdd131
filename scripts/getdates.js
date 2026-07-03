@@ -12,5 +12,3 @@ ageContainer.textContent = currentAge;
 copyrightYearContainer.textContent = year;
 
 document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
-
-console.log(year);

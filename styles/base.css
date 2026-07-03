@@ -17,6 +17,10 @@
     font-family: var(--body-font);
 }
 
+body {
+    font-display:swap;
+}
+
 h1, h2, h3 {
     font-family: var(--heading-font);
 }
@@ -164,4 +168,8 @@ figcaption {
 
 #lastModified {
     color: var(--accent-color);
+}
+
+#profile-picture {
+    aspect-ratio:500/667;
 }
