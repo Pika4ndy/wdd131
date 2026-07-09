@@ -6,7 +6,7 @@ weeks course.
 
 ## Purpose of the course
 
-The purpose of this course is to 
+The purpose of this course is to ...
 
 ## Content of the repository
 

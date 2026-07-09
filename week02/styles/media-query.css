@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #9e9edd;
+    --primary-color-alt: #aaa;
+    --secondary-color: #000;
+    --secondary-color-alt: #444;
+    --accent-color: #ff0000;
+    --text-on-primary: #000;
+    --text-on-secondary: #fff;
+    --body-font: Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}

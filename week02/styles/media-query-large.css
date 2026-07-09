@@ -1,0 +1,10 @@
+@media screen and (min-width:500px) {
+    header {
+        background-color: var(--secondary-color);
+        color: var(--text-on-secondary);
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
