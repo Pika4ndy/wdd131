@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #213885;
+    --primary-color-alt: #081849;
+    --secondary-color: #ECDFD2;
+    --secondary-color-alt: #CCCACC;
+    --accent-color: #ff0;
+    --text-on-primary: #fff;
+    --text-on-secondary: #000;
+    --heading-font: "Noto Serif", Cambria, Georgia, serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+header {
+    display: grid;
+    /* padding: 1rem 0; */
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+nav {
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: var(--text-on-secondary);
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-on-secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: background 250ms ease-in;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: var(--text-on-primary);
+    background-color: var(--primary-color-alt);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    text-align: center;
+}
+
+figure {
+    margin: 15px 0;
+}
+
+figure img {
+    aspect-ratio: 800/533;
+    width: 350px;
+    height: auto;
+}
+
+figcaption {
+    color: var(--primary-color);
+}
+
+/* Classes */
+.title {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    margin: 15px;
+}
+
+
+.show {
+    display: block;
+}
+
+/* Ids */
+
+#menu::before {
+    content: "☰";
+    position: absolute;
+    top: .2rem;
+    right: .75rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--text-on-primary);
+    transition: transform .5s ease;
+}
+
+#menu.show::before {
+    transform: rotate(1turn);
+    content: "X";
+}
