@@ -43,22 +43,25 @@ header ul {
     display: flex;
     justify-content: space-around;
     margin: 0;
-    padding: 0 1rem;
+    list-style: none;
 }
 
 header a {
+    display: block;
     color: var(--text-on-secondary);
     font-family: var(--heading-font);
     text-decoration: none;
+    transition: background 250ms ease-in;
 }
 
-header a:hover {
+header a:hover, header a:focus {
     text-decoration: underline;
+    background-color: var(--primary-color-alt);
+    color: var(--text-on-primary);
 }
 
 header li {
-    display: block;
-    list-style: none;
+    flex: 1 1 auto;
 }
 
 footer {
