@@ -27,20 +27,22 @@
         box-shadow: 0 0 20px #222;
         width: 20rem;
 
-        img {
-            display: none;
-        }
-        
-        h2 {
-            background-color: var(--primary-color);
-            position: relative;
-            padding: 1rem;
-            padding-left: 50px;
-            text-align: left;
-            min-width: none;
-            left: -40px;
-            color: var(--text-on-primary);
-        }
+    }
+
+    section img {
+        display: none;
+    }
+    
+    section h2 {
+        position: relative;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        padding-left: 50px;
+        text-align: left;
+        min-width: none;
+        left: -40px;
+        color: var(--text-on-primary);
+        border: 2px solid var(--secondary-color);
     }
 
 
@@ -64,9 +66,6 @@
         object-fit: contain;
         min-height:max-content;
     
-        img {
-            object-fit: contain;
-        }
     }
 
 }
