@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 — Andrianarivo Andy — Places</title>
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <meta name="description" content="WDD131-Dynamic Web Development, Andrianarivo Andy, Norway: a place I wish to visit one day">
+    <meta name="author" content="Andrianarivo Andy">
+    <link rel="shortcut icon" href="images/favico.svg" type="image/x-icon">
+
+    <script src="scripts/places.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Norway</h1>
+    </header>
+    <main>
+        <div class="image">
+            <picture>
+                <source srcset="images/norway-landscape.webp" media="(min-width: 1025px)" width="1200" height="800">
+                <img src="images/norway-landscape-small.webp" alt="A norwegian landscape" width="800" height="533">
+            </picture>
+        </div>
+
+        <section>
+            <h2>Data</h2>
+                    <span class="label">Surface:</span>
+                    <span class="value">385,207 sq km</span>
+                    <span class="label">Population:</span>
+                    <span class="value">5,618,354</span>
+                    <span class="label">Capital:</span>
+                    <span class="value">Oslo</span>
+                    <span class="label">Languages:</span>
+                    <span class="value">Norwegian, S&aacute;mi</span>
+                    <span class="label">Currency:</span>
+                    <span class="value">Norwegian krone (NOK)</span>
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC+1</span>
+                    <span class="info">(Summer: UTC+2)</span>
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+47</span>
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.no</span>
+
+        </section>
+        <section>
+            <h2>Weather</h2>
+                <div class="weather-img">
+                    <img src="images/weather.svg" alt="weather icon" width="100" height="100">
+                </div>
+                    <span class="label">Temperature:</span>
+                    <span class="value">18&deg;C</span>
+
+                    <span class="label">Conditions:</span>
+                    <span class="value">Cloudy</span>
+
+                    <span class="label">Wind:</span>
+                    <span class="value">8 km/h</span>
+
+                    <span class="label">Precipitation:</span>
+                    <span class="value">10%</span>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🎹 Andrianarivo Andy 🎹 Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

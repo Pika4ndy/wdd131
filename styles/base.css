@@ -154,6 +154,10 @@ figcaption {
     line-height: 1.5rem;
 }
 
+.hidden-unimportant {
+    display: none;
+}
+
 /* Ids */
 #course-title {
     display: block;

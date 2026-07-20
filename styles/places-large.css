@@ -1,0 +1,72 @@
+@media screen and (min-width: 1025px) {
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        /* height: 100dvh; */
+    }
+
+    header, main, footer {
+        margin: 0;
+    }
+
+    main {
+        position: relative;
+        flex: 1;
+        margin-bottom: -5px;
+    }
+
+    section {
+        position: absolute;
+        opacity: .9;
+        background-color: var(--text-on-primary);
+        padding: 1rem;
+        box-shadow: 0 0 20px #222;
+        width: 20rem;
+
+        img {
+            display: none;
+        }
+        
+        h2 {
+            background-color: var(--primary-color);
+            position: relative;
+            padding: 1rem;
+            padding-left: 50px;
+            text-align: left;
+            min-width: none;
+            left: -40px;
+            color: var(--text-on-primary);
+        }
+    }
+
+
+    section:nth-of-type(1) {
+        left: 50px;
+        top: 100px;
+    }
+    
+    section:nth-of-type(2) h2::after{
+        content: "⛅️";
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+    
+    section:nth-of-type(2) {
+        right: 50px;
+        bottom: 100px;
+    }
+    
+    .image {
+        object-fit: contain;
+        min-height:max-content;
+    
+        img {
+            object-fit: contain;
+        }
+    }
+
+}
