@@ -27,4 +27,4 @@ if (temperature <= 10 && windSpeed > 4.8) {
     windChill = CalculateWindChill(temperature, windSpeed);
 }
 
-windChillContainer.innerHTML = windChill ? Math.round(windChill * 100) / 100 + " &deg;C" : "N / A"
+windChillContainer.innerHTML = windChill ? Math.round(windChill * 100) / 100 + " &deg;C" : "N / A";
