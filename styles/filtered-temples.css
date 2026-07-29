@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #213885;
+    --primary-color-alt: #081849;
+    --secondary-color: #ECDFD2;
+    --secondary-color-alt: #CCCACC;
+    --accent-color: #853621;
+    --text-on-primary: #fff;
+    --text-on-secondary: #000;
+    --heading-font: "Noto Serif", Cambria, Georgia, serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+header {
+    display: grid;
+    /* padding: 1rem 0; */
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+nav {
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: var(--text-on-secondary);
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-on-secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: background 250ms ease-in;
+}
+
+nav a:nth-of-type() {
+    border: 2px solid gray;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: var(--text-on-primary);
+    background-color: var(--primary-color-alt);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+
+    justify-items: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+figure {
+    margin: 15px 0;
+    background-color: rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+    width: 400px;
+}
+
+figure img {
+    width: 350px;
+    height: auto;
+    box-shadow: 0 0 10px black;
+    margin: 10px ;
+}
+
+figcaption {
+    color: var(--primary-color);
+}
+
+/* Classes */
+.title {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    margin: 15px;
+}
+
+
+.show {
+    display: block;
+}
+
+.label {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.label::first-letter {
+    font-size: 1rem;
+}
+
+/* Ids */
+
+#menu::before {
+    content: "☰";
+    position: absolute;
+    top: .2rem;
+    right: .75rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--text-on-primary);
+    transition: transform .5s ease;
+}
+
+#menu.show::before {
+    transform: rotate(1turn);
+    content: "X";
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+}

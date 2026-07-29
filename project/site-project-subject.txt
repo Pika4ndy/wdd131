@@ -1,0 +1,12 @@
+Subject: Science Library
+
+Content:
+    The website will allow customers to register, choose a book to read/reserve/order
+    Give a list of present books, make announcement of science event in the library,
+    share their thoughts on a book/experiment/anecdote/formula/scientist
+    The website will contain daily formula explanation, quizzes, 
+
+Reason:
+    I love science and want everyone to get access to science knowledge. I want a
+    place where everyone fond of science can hang out, meet people with same interests
+    share their ideology, inspiration ; be free of expressing their love for science

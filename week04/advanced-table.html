@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Table Assignment</title>
+    <link rel="stylesheet" href="styles/table.css">
+    <meta name="description" content="WDD131 — Dynamic Web Development — Andrianarivo Andy | A simple advanced HTML table example using the features of: colspan/rowspan, scope, caption, id/headers">
+    <meta name="author" content="Andrianarivo Andy">
+</head>
+<body>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr><th colspan="4" scope="colgroup" id="main-header">ACME Wildest Service</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="blank"></td>
+                <th scope="col" id="basic" headers="main-header">Basic</th>
+                <th scope="col" id="premium" headers="main-header">Premium</th>
+                <th scope="col" id="deluxe" headers="main-header">Deluxe</th>
+            </tr>
+            <tr>
+                <th scope="row" id="f1" headers="main-header">Feature 1</th>
+                <td headers="main-header f1 basic">✔️</td>
+                <td headers="main-header f1 premium">✔️</td>
+                <td headers="main-header f1 deluxe">✔️</td>
+            </tr>
+            <tr>
+                <th scope="row" id="f2" headers="main-header">Feature 2</th>
+                <td headers="main-header f2 basic">❌</td>
+                <td headers="main-header f2 premium">✔️</td>
+                <td headers="main-header f2 deluxe">✔️</td>
+            </tr>
+            <tr>
+                <th scope="row" id="f3" headers="main-header">Feature 3</th>
+                <td headers="main-header f3 basic">❌</td>
+                <td headers="main-header f3 premium">❌</td>
+                <td headers="main-header f3 deluxe">✔️</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

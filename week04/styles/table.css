@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #252525;
+    --primary-color-alt: #545454;
+    --secondary-color: #cfcfcf;
+    --secondary-color-alt: #7d7d7d;
+    --accent-color: #616161;
+    --text-on-primary: #fff;
+    --text-on-secondary: #ff0000;
+    --heading-font: "Noto Serif", Cambria, Georgia, 'Times New Roman', serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: boreder-box;
+}
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: boreder-box;
+}
+
+body {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+table {
+    min-width: 40dvw;
+    margin: 5rem auto;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+
+tbody > tr:nth-child(odd) {
+    background-color: rgba(from var(--primary-color-alt) r g b / .15);
+}
+
+tbody tr:first-child th{
+    background-color: var(--primary-color-alt);
+    color: var(--text-on-primary);
+    width: 4rem;
+}
+
+th {
+    font-family: var(--body-font);
+    padding: 10px 15px;
+}
+
+td, th {
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+.blank {
+    background-color: white;
+}

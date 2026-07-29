@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <meta name="description" content="WDD131 — Dynamic Web Development, Andrianarivo Andy: Picture Album of some Temples">
+    <meta name="author" content="Andrianarivo Andy">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="shortcut icon" href="images/favico.svg" type="image/x-icon">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">Temple Album</h1>
+        <a href="#" id="menu" aria-label="Open/close menu"></a>
+        <nav>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Temples</h2>
+        <div id="cards-container"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎹 Andrianarivo Andy 🎹 Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
