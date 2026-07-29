@@ -10,6 +10,12 @@
     --body-font: "Inter", Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+    font-family: "Noto Serif";
+    src: url();
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
