@@ -21,6 +21,7 @@
 header, footer {
     background-color: var(--primary-color);
     color: var(--text-on-primary);
+    min-width: 100%;
 }
 
 header {
@@ -30,7 +31,6 @@ header {
 }
 
 footer {
-    width: 100%;
     text-align: center;
     padding: 1rem 0.5rem;
 }
@@ -98,6 +98,11 @@ figure {
     border: 1px solid rgba(0, 0, 0, .2);
     padding: 1rem;
     width: 400px;
+    transition: transform 250ms ease;
+}
+
+figure:focus, figure:hover {
+    transform: scale(1.05);
 }
 
 figure img {
