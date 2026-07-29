@@ -110,7 +110,7 @@ figure:focus, figure:hover {
 figure img {
     width: 350px;
     height: auto;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px #000;
     margin: 10px ;
 }
 

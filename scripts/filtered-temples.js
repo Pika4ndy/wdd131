@@ -119,7 +119,7 @@ const newTemples = temples.filter((temple) => temple.dedicated.split(", ")[0] >=
 const largeTemples = temples.filter((temple) => temple.area >= 90000);
 const smallTemples = temples.filter((temple) => temple.area <= 10000);
 
-const highLCP = ["Yigo Guam", "Manti Utah", "Payson Utah", "Aba Nigeria", "Washington D.C."]
+const highLCP = ["Yigo Guam", "Manti Utah", "Payson Utah", "Aba Nigeria"]
 
 const cardContainer = document.querySelector("#cards-container");
 
@@ -143,7 +143,8 @@ function displayListOfTemples(templesList){
         templeImage.height = 250;
         if (screen.width < 800 && highLCP.includes(temple.templeName)){
             templeImage.fetchPriority = "high";
-            
+            templeImage.loading = "eager";
+
         }
     
         heading.textContent = temple.templeName;
