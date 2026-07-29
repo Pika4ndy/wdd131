@@ -141,7 +141,7 @@ function displayListOfTemples(templesList){
         templeImage.loading = "lazy";
         templeImage.width = 400;
         templeImage.height = 250;
-        if (screen.width < 800 && highLCP.includes(temple.templeName)){
+        if (highLCP.includes(temple.templeName)){
             templeImage.fetchPriority = "high";
             templeImage.loading = "eager";
 
