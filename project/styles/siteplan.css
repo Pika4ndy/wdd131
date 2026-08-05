@@ -1,0 +1,144 @@
+:root {
+	--primary-color: #fee302;
+	--secondary-color: #001a72;
+	--accent-color: #510087;
+	--text-on-primary: #000;
+	--text-on-secondary: #fff;
+  --accent-opposite: #fff;
+	--heading-font: "Merriweather", Cambria, Georgia, serif;
+	--body-font: "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: boreder-box;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	margin: 1rem 2rem;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--secondary-color);
+	margin: 1rem;
+}
+
+h3 {
+	text-align: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+p {
+	margin: 0.3rem;
+  padding: 1rem;
+}
+
+/* Classes */
+.color-scheme {
+	display: block;
+  margin: 5px;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid gray;
+  box-shadow: 5px 5px 10px #808080;
+  transition: transform 250ms ease .1s;
+}
+
+.color-scheme:hover {
+  transform: scale(1.05);
+}
+
+.color-scheme ul {
+  list-style-type: circle;
+}
+
+.color-scheme li:first-child{
+  text-decoration: underline;
+}
+
+.additional {
+	text-align: center;
+  margin: 10px;
+}
+
+.info {
+	color: var(--accent-color);
+	font-weight: 600;
+}
+
+.info:hover {
+  text-decoration: solid underline;
+  cursor: pointer;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+.schema {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.color-code {
+  font-family: var(--heading-font);
+  font-size: larger;
+  text-align: center;
+}
+
+/* Ids */
+#primary-color-div {
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
+}
+
+#secondary-color-div {
+  background-color: var(--secondary-color);
+  color: var(--text-on-secondary);
+}
+
+#accent-color-div {
+  background-color: var(--accent-color);
+  color: var(--accent-opposite);
+}
+
+#merriweather-example {
+  display: inline-block;
+  font-family: "Merriweather", serif;
+}
+
+#noto-sans-example {
+  display: inline-block;
+  font-family: "Noto Sans", serif;
+}
+
+#wireframe {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+#wireframe img {
+	max-width: 100%;
+}
+
+#wireframe-mobile {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+#wireframe-mobile img {
+	max-width: 100%;
+}

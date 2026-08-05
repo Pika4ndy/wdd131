@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #FEE302;
+    --secondary-color: #001A72;
+    --accent-color: #510087;
+    --text-on-primary: #000;
+    --text-on-secondary: #fff;
+    --heading-font: "Merriweather", Cambria, Georgia, serif;
+    --body-font: "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: boreder-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2rem;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+header nav {
+    background-color: var(--secondary-color);
+    color: var(--text-on-secondary);
+    border-radius: 20px;
+}
