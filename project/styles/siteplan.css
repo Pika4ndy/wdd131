@@ -23,6 +23,11 @@ header {
 	align-items: center;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+}
+
 main {
 	margin: 1rem 2rem;
 }
