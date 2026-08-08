@@ -65,7 +65,7 @@ form input[type='checkbox'] {
     margin-right: 6px;
 }
 
-form input[type='submit'] {
+input[type='submit'] {
     width: 95%;
     max-width: 400px;
     padding: .75rem;
@@ -78,7 +78,7 @@ form input[type='submit'] {
     box-shadow: 3px 2px 3px #aaa;
 }
 
-form input[type='submit']:active {
+input[type='submit']:active {
     box-shadow: none;
     transform: translate(3px, 2px);
 }
@@ -95,6 +95,7 @@ form {
 
 fieldset {
     border: none;
+    padding: 1rem;
 }
 
 /* Classes */

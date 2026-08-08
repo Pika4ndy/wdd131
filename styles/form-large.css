@@ -3,12 +3,12 @@
         max-width: 900px;
     }
 
-    fieldset {
-        padding: 1rem 4rem;
+    form fieldset {
+        padding: 1rem 10%;
     }
 
-    input[type="submit"] {
-        margin-left: 3rem;
+    form input[type="submit"] {
+        margin-left: 10%;
     }
 
     .stars {
