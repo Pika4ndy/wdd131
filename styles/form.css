@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #213885;
+    --primary-color-alt: #081849;
+    --secondary-color: #ECDFD2;
+    --secondary-color-alt: #CCCACC;
+    --accent-color: #ff0;
+    --attention-color: #f00;
+    --valid-color: #008000;
+    --text-on-primary: #fff;
+    --text-on-secondary: #000;
+    --heading-font: "Noto Serif", Cambria, Georgia, serif;
+    --body-font: "Inter", Helvetica, Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    text-align: center;
+    min-width: 2rem;
+}
+
+main {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+/* ------------ FORM ------------ */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type='text'],
+form input[type='date'],
+form textarea,
+select
+{
+    display: block;
+    min-height: 2rem;
+    appearance: none;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    padding: .75rem;
+    border: 1px solid gray;
+    font-family: var(--body-font);
+}
+
+form input[type='checkbox'] {
+    margin-right: 6px;
+}
+
+form input[type='submit'] {
+    width: 95%;
+    max-width: 400px;
+    padding: .75rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+    background-color: var(--primary-color-alt);
+    color: var(--text-on-primary);
+    border-radius: 6px;
+}
+
+form div {
+    display: block;
+    margin-top: 1rem;
+}
+
+fieldset {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+/* Classes */
+.stars {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -0.1rem;
+}
+
+.stars input {
+    margin: 0 auto;
+    display: block;
+}
+
+.optional {
+    color: var(--primary-color-alt);
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: small;
+}
+
+.info {
+    display: block;
+    font-style: italic;
+}

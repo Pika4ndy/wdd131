@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="WDD 131 — Dynamic Web Development — Andrianarivo Andy, Product Review Form">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <label for="productList">
+                    Product Name
+                    <select name="product" id="productList" required>
+                        <option value="" disabled selected>Select a product... </option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <div class="stars">
+                    <label for="onestar">&star;<input type="radio" name="stars" id="onestar" required></label>
+                    <label for="twostars">&star;&star;<input type="radio" name="stars" id="twostars" required></label>
+                    <label for="threestars">&star;&star;&star;<input type="radio" name="stars" id="threestars"
+                            required></label>
+                    <label for="fourstars">&star;&star;&star;&star;<input type="radio" name="stars" id="fourstars"
+                            required></label>
+                    <label for="fivestars">&star;&star;&star;&star;&star;<input type="radio" name="stars" id="fivestars"
+                            required>
+                </div>
+                </label>
+
+                <label for="installation-date">Date of Installation<input type="date" name="date" id="installation-date"
+                        required></label>
+
+                <div>Each features do you find useful in the product?<span class="info">(Check all that apply)</span>
+                </div>
+
+                <label for="durability"><input type="checkbox" name="feature" id="durability"
+                        required>Durability</label>
+                <label for="ease"><input type="checkbox" name="feature" id="ease" required>Ease of Use</label>
+                <label for="performance"><input type="checkbox" name="feature" id="performance"
+                        required>Performance</label>
+                <label for="design"><input type="checkbox" name="feature" id="design" required>Design</label>
+
+                <label for="review">Written Review <span class="optional">(optional)</span><textarea name="review"
+                        id="review"></textarea></label>
+
+                <label for="name">Your Name <span class="optional">(optional)</span> <input type="text" name=""
+                        id=""></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎹 Andrianarivo Andy 🎹 Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
