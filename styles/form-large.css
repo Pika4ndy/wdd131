@@ -1,0 +1,22 @@
+@media screen and (min-width:800px) {
+    main {
+        max-width: 900px;
+    }
+
+    fieldset {
+        padding: 1rem 4rem;
+    }
+
+    input[type="submit"] {
+        margin-left: 3rem;
+    }
+
+    .stars {
+        justify-content: space-between;
+        max-width: 400px;
+    }
+
+    .stars label:first-child {
+        width: 1rem;
+    }
+}
