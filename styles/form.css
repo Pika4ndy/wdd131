@@ -8,8 +8,8 @@
     --valid-color: #008000;
     --text-on-primary: #fff;
     --text-on-secondary: #000;
-    --heading-font: "Noto Serif", Cambria, Georgia, serif;
-    --body-font: "Inter", Helvetica, Arial, sans-serif;
+    --heading-font: Cambria, Georgia, serif;
+    --body-font: Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after {
@@ -88,9 +88,13 @@ form div {
     margin-top: 1rem;
 }
 
-fieldset {
+form {
     background-color: var(--secondary-color);
     padding: 1rem;
+}
+
+fieldset {
+    border: none;
 }
 
 /* Classes */
