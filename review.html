@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="WDD 131 — Dynamic Web Development — Andrianarivo Andy, product review from form.html">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/review.css">
+
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Thank you for your review!</h1>
+    </header>
+    <main>
+        <h2>You have completed <strong><span id="reviewCount"></span> review(s)</strong>!🎉</h2>
+
+        <section>
+            <p>
+                Thank you <span id="username"></span> for rating the product: <span id="productName"></span>.
+            </p>
+            <h3>Your review:</h3>
+            <article class="reviewedProduct">
+                <div>Stars: <span id="starsDisplay"></span></div>
+                <div>Installed on: <span id="dateDisplay"></span></div>
+                <div>Useful features: <span id="featuresDisplay"></span></div>
+                <div id="additionalReview">Additional Review: <span id="reviewComment"></span></div>
+            </article>
+            <p>
+                Your feedbacks are meaningful to us. We hope to see you again soon!
+            </p>
+            <p><a href="form.html" class="button-type-link">Write another review</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎹 Andrianarivo Andy 🎹 Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

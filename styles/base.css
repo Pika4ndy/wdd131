@@ -4,6 +4,8 @@
     --secondary-color: #ECDFD2;
     --secondary-color-alt: #CCCACC;
     --accent-color: #ff0;
+    --attention-color: #f00;
+    --valid-color: #008000;
     --text-on-primary: #fff;
     --text-on-secondary: #000;
     --heading-font: "Noto Serif", Cambria, Georgia, serif;

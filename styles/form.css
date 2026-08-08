@@ -18,6 +18,14 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--body-font);
+}
+
 header, footer {
     margin: 0;
     background-color: var(--primary-color);
@@ -68,6 +76,12 @@ form input[type='submit'] {
     background-color: var(--primary-color-alt);
     color: var(--text-on-primary);
     border-radius: 6px;
+    box-shadow: 3px 2px 3px #aaa;
+}
+
+form input[type='submit']:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
 }
 
 form div {
@@ -103,3 +117,5 @@ fieldset {
     display: block;
     font-style: italic;
 }
+
+/* ------------ REVIEW PAGE ------------ */

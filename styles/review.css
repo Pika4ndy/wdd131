@@ -1,0 +1,31 @@
+article {
+    margin: 1rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+#productName {
+    text-decoration: underline;
+}
+
+.button-type-link {
+    display: block;
+    text-decoration: none;
+    width: 96%;
+    max-width: 400px;
+    padding: .75rem;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 1.75rem;
+    background-color: var(--primary-color-alt);
+    color: var(--text-on-primary);
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px #aaa;
+}
+
+.button-type-link:active {
+    box-shadow: none;
+    transform: translate(3px, 2px);
+}

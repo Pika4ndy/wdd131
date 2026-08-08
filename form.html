@@ -10,8 +10,9 @@
 
     <link rel="stylesheet" href="styles/form.css">
 
-    <script src="scripts/form.js" defer></script>
+    <script src="scripts/products.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -24,19 +25,20 @@
                 <label for="productList">
                     Product Name
                     <select name="product" id="productList" required>
-                        <option value="" disabled selected>Select a product... </option>
+                        <option value="" disabled selected>Select a product... &#9662;</option>
                     </select>
+                    <span id="productInfo"></span>
                 </label>
 
                 <div>Overall Rating</div>
                 <div class="stars">
-                    <label for="onestar">&star;<input type="radio" name="stars" id="onestar" required></label>
-                    <label for="twostars">&star;&star;<input type="radio" name="stars" id="twostars" required></label>
-                    <label for="threestars">&star;&star;&star;<input type="radio" name="stars" id="threestars"
+                    <label for="onestar">&star;<input type="radio" name="stars" id="onestar" value="1" required></label>
+                    <label for="twostars">&star;&star;<input type="radio" name="stars" id="twostars" value="2" required></label>
+                    <label for="threestars">&star;&star;&star;<input type="radio" name="stars" id="threestars"  value="3"
                             required></label>
-                    <label for="fourstars">&star;&star;&star;&star;<input type="radio" name="stars" id="fourstars"
+                    <label for="fourstars">&star;&star;&star;&star;<input type="radio" name="stars" id="fourstars" value="4"
                             required></label>
-                    <label for="fivestars">&star;&star;&star;&star;&star;<input type="radio" name="stars" id="fivestars"
+                    <label for="fivestars">&star;&star;&star;&star;&star;<input type="radio" name="stars" id="fivestars"  value="5"
                             required>
                 </div>
                 </label>
@@ -47,17 +49,15 @@
                 <div>Each features do you find useful in the product?<span class="info">(Check all that apply)</span>
                 </div>
 
-                <label for="durability"><input type="checkbox" name="feature" id="durability"
-                        required>Durability</label>
-                <label for="ease"><input type="checkbox" name="feature" id="ease" required>Ease of Use</label>
-                <label for="performance"><input type="checkbox" name="feature" id="performance"
-                        required>Performance</label>
-                <label for="design"><input type="checkbox" name="feature" id="design" required>Design</label>
+                <label for="durability"><input type="checkbox" name="durability" id="durability">Durability</label>
+                <label for="ease"><input type="checkbox" name="ease" id="ease">Ease of Use</label>
+                <label for="performance"><input type="checkbox" name="performance" id="performance">Performance</label>
+                <label for="design"><input type="checkbox" name="design" id="design">Design</label>
 
                 <label for="review">Written Review <span class="optional">(optional)</span><textarea name="review"
                         id="review"></textarea></label>
 
-                <label for="name">Your Name <span class="optional">(optional)</span> <input type="text" name=""
+                <label for="name">Your Name <span class="optional">(optional)</span> <input type="text" name="name"
                         id=""></label>
             </fieldset>
 
