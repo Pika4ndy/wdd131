@@ -99,6 +99,12 @@ fieldset {
     display: flex;
     justify-content: space-around;
     margin-top: -0.1rem;
+    flex-wrap: wrap;
+}
+
+.stars label {
+    min-width: 4rem;
+    text-align: center;
 }
 
 .stars input {
