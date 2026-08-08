@@ -30,19 +30,26 @@ function displayList(item) {
     newChap.appendChild(removeBtn);
     chapUl.appendChild(newChap);
 
-    footer.innerHTML = `<strong>${chapter}</strong> has been added`;
+    footer.textContent = "";
+    footer.textContent = `${chapter} has been added`;
     footer.style.color = "green";
 }
 
 function deleteChapter(chapter) {
     const chapterToRemove = chaptersArray.findIndex((value) => value == chapter);
+    if (chapterToRemove === -1) return; // nothing to remove
 
     chaptersArray.splice(chapterToRemove, 1);
     setChapterList(chaptersArray);
 }
 
 function getChapterList() {
-    return JSON.parse(localStorage.getItem("MyFavBOMList"));
+    try {
+        const raw = localStorage.getItem("MyFavBOMList");
+        return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+        return [];
+    }
 }
 
 function setChapterList(newChaptersList) {
@@ -59,18 +66,23 @@ btn.addEventListener('click', (e) => { // Adding a list
         return;
     }
 
+    if (chapter === "") {
+        footer.style.color = "red";
+        footer.textContent = "Do not leave empty!";
+        return;
+    }
+
     if (chaptersArray.includes(chapter)) {
         footer.textContent = "Already in the list!";
         footer.style.color = "black";
+        return;
     }
 
-    if (chapter !== "") {
-        displayList(chapter);
-        chaptersArray.push(chapter);
-        setChapterList(chaptersArray);
-        input.value = "";
-        input.focus();
-    }
+    displayList(chapter);
+    chaptersArray.push(chapter);
+    setChapterList(chaptersArray);
+    input.value = "";
+    input.focus();
 });
 
 input.addEventListener("keyup", (e) => {
@@ -79,6 +91,9 @@ input.addEventListener("keyup", (e) => {
     }
 });
 
-chaptersArray.forEach(chapter => {
-    displayList(chapter);
-});
+// initial render: use a fragment to minimize reflows
+if (chaptersArray.length) {
+    const frag = document.createDocumentFragment();
+    chaptersArray.forEach(ch => frag.appendChild(renderChapter(ch)));
+    chapUl.appendChild(frag);
+}

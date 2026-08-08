@@ -20,7 +20,11 @@ selectionInput.addEventListener("change", (e) => {
     
     const actualProduct = products.find((product) => chosenProductId == product.id);
 
-    productInfo.innerHTML = `Average Rating: <strong>${actualProduct.averagerating}</strong>`;
+    // build the info using DOM nodes to avoid parsing HTML
+    productInfo.textContent = "Average Rating: ";
+    const strong = document.createElement('strong');
+    strong.textContent = actualProduct.averagerating;
+    productInfo.appendChild(strong);
 });
 
 form.addEventListener("submit", (e) => {

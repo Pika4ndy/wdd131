@@ -1,4 +1,4 @@
-let completedReviews = localStorage.getItem("completedReviews") || 0;
+let completedReviews = parseInt(localStorage.getItem("completedReviews")) || 0;
 const urlParams = new URLSearchParams(window.location.search);
 
 const productId = urlParams.get("product");
@@ -49,18 +49,12 @@ starsDisplay.textContent = givenRating;
 dateDisplay.textContent = formattedDate.toDateString();
 
 if (checkedFeatures.length > 0) {
-    for (const feature of checkedFeatures) {
-        featuresDisplay.textContent += featuresConvertion[feature];
-
-        if (!(checkedFeatures.findIndex(x => x == feature) == checkedFeatures.length - 1)) {
-            featuresDisplay.textContent += ", ";
-        }
-    }
+    featuresDisplay.textContent = checkedFeatures.map(f => featuresConvertion[f]).join(', ');
 } else {
     featuresDisplay.textContent = "None";
 }
 
-if (review != "") {
+if (review) {
     reviewComment.textContent = review;
 } else {
     reviewDisplay.style.display = "none";
