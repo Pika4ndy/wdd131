@@ -1,6 +1,59 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     main {
-        width: 75%;
+        width: 80%;
         max-width: 1500px;
+    }
+
+    /* --- HERO BANNER --- */
+    .hero-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .hero-banner img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        order: 10;
+        flex: 0 0 auto;
+    }
+
+    .hero-banner .block-over {
+        background-color: transparent;
+        margin: 0;
+        flex: 1 1 auto;
+    }
+
+    /* --- COMMUNITY-DAILY --- */
+    .community-daily {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .community-daily > h2,
+    .community-daily > h3,
+    .community-daily > .events,
+    .community-daily > .quiz {
+        grid-column: 1 / -1;
+    }
+
+    .community-daily > .discussion {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+
+    .community-daily > .formula,
+    .community-daily > .quote {
+        grid-column: 2;
+    }
+
+    /* --- EVENTS --- */
+    .events {
+        height: 40dvw;
+        max-height: 50rem;
     }
 }
