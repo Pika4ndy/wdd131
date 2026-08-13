@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciSphere Library Homepage</title>
+
+    <meta name="author" content="Andrianarivo Andy">
+    <meta name="description" content="SciSphere Library Project, Homepage">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/events.js" defer></script>
+    
+</head>
+<body>
+    <!-- 
+        Medium: >= 800px
+        Large: >= 1200px
+    -->
+    <header>
+        <div class="logo">
+            <picture>
+                <a href="#">
+                    <img src="images/logo-circle.svg" alt="SciSphere Library Logo" width="100" height="100">
+                </a>
+            </picture>
+        </div>
+        <h1>SciSphere Library</h1>
+        <nav>
+            <div class="nav-icon">
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="./catalog/index.html">Catalog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="events.html">Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-banner">
+            <img src="images/hero-image.webp" alt="Hero image" class="hero-image" loading="lazy" width="300" height="300">
+            <div class="block-over">
+                <h2>Welcome to SciSphere Library</h2>
+                <p>A place where science lovers gather, read and share</p>
+                <div class="buttons-box">
+                    <a href="contact.html" class="primary-button button">Contact Us</a>
+                    <a href="about.html" class="secondary-button button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Books</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad cupiditate iure voluptates facilis odit eum consectetur dolorum nihil pariatur!
+            </p>
+            <div class="books">
+                <!-- Probably implemented by Javascript -->
+                <article> 
+                    <!-- Book Instance placeholder & example -->
+                    <img src="images/books/book1.webp" alt="book1-placeholder" loading="lazy" width="400" height="267">
+                    <div>
+                        <h3>Book 1</h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione assumenda quisquam vero fugit consequuntur, facere iure temporibus beatae sit necessitatibus consectetur.
+                    </div>
+                    <a href="catalog/book-id.html">Reserve</a> <!-- ::after to make the arrow right -->
+                </article>
+                <article> 
+                    <!-- Book Instance placeholder & example -->
+                    <img src="images/books/book2.webp" alt="book1-placeholder" loading="lazy" width="400" height="267">
+                    <div>
+                        <h3>Book 2</h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione assumenda quisquam vero fugit consequuntur, facere iure temporibus beatae sit necessitatibus consectetur
+                    </div>
+                    <a href="catalog/book-id.html">Reserve</a> <!-- ::after to make the arrow right -->
+                </article>
+                <article> 
+                    <!-- Book Instance placeholder & example -->
+                    <img src="images/books/book1.webp" alt="book1-placeholder" loading="lazy" width="400" height="267">
+                    <div>
+                        <h3>Book 3</h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione assumenda quisquam vero fugit consequuntur, facere iure temporibus beatae sit necessitatibus consectetur 
+                    </div>
+                        <a href="catalog/book-id.html">Reserve</a> <!-- ::after to make the arrow right -->
+                </article>
+            </div>
+            <a href="catalog/books.html" class="more button">More Books</a>
+        </section>
+
+        <section class="community-daily">
+            <h2>Community & Daily Science</h2>
+            <h3>Upcoming Events</h3>
+            <article class="events">
+                <button id="event-prev-btn" class="carousel-btn">&#10094;</button>
+                <button id="event-next-btn" class="carousel-btn">&#10095;</button>
+                <div class="event-card active">
+                    <img src="images/events/event1.webp" alt="Current event at the SciSphere Library" loading="lazy">
+                    <div class="event-overlay">
+                        <span class="event-date">01-01-2027</span>
+                        <h4>Math Tournament</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, sint.</p>
+                        <div class="buttons-box">
+                            <a href="events.html#current" class="primary-button button">Participate?</a>
+                            <a href="" class="secondary-button button">More Events</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/events/event2.webp" alt="Current event at the SciSphere Library" loading="lazy">
+                    <div class="event-overlay">
+                        <span class="event-date">01-01-2027</span>
+                        <h4>Science Tools Show</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, quo?</p>
+                        <div class="buttons-box">
+                            <a href="events.html#current" class="primary-button button">Participate?</a>
+                            <a href="" class="secondary-button button">More Events</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="discussion">
+                <h3>Community Thoughts & Discussions</h3>
+                <p>Recent Ideas, Experiments & Anecdotes</p>
+                <!-- Populate with JS -->
+                <article>
+                    <img src="images/discussion1.webp" alt="Image Preview of the discussion" class="discussion-background" width="600" height="400" loading="lazy" >
+                    <div class="discussion-info">
+                        <span class="date">15 Feb 2024</span>
+                        <span class="subject">Math</span> <!-- Category: What field of science-->
+                        <span class="category">Experiment</span> <!-- type: discussion subject type-->
+                        <span class="author">Adam Smith</span> <!-- type: discussion subject type-->
+                    </div>
+                    <h4>Template blog dicussion</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam provident vitae accusantium, ex tempore reiciendis consectetur ad, cupiditate maxime illo magni adipisci distinctio, et at dolore consequuntur aliquam voluptates expedita!</p>
+                    <a href="catalog/discussions.html">Read More</a> <!-- Arrow right ::after -->
+                </article>
+                <a href="catalog/index.html" class="more button">Other Community Discussions</a>
+            </article>
+
+            <article class="formula">
+                <h3>Today's Formula</h3>
+
+                <p id="today-formula"> <!-- Populate with JS -->
+                    <!-- Template -->
+                    <var class="formula-text">ax<sup>2</sup>+bx+c = 0</var>
+                    <span class="formula-author">Uknown, 1800</span>
+
+                </p>
+                    <div class="buttons-box">
+                        <a href="./catalog/formulas.html" class="secondary-button button">Other Formulas</a>
+                        <a href="./catalog/formulas.html#id" class="primary-button button">Learn More</a>
+                    </div>
+            </article>
+
+            <artcle class="quote">
+                <h3>Today's Quote</h3>
+                <p id="today-quote">
+                    <span class="quote-text">Rien ne se crée, rien ne se perd, tout se tranforme</span>
+                    <span class="quote-author">Antoine de Lavoisier, 1830</span>
+                </p>
+                <div class="buttons-box">
+                    <a href="./catalog/quotes.html" class="secondary-button button">Other Quotes</a>
+                    <a href="./catalog/quotes.html#id" class="primary-button button">Learn More</a>
+                </div>
+            </artcle>
+
+            <article class="quiz">
+                <h3>Quiz of the Day</h3>
+                <form action="quiz.html" method="get">
+                    <label for="quiz" class="quiz">When was General Relativity published?
+                        <input type="text" name="quiz" id="quiz"></label>
+
+                    <input type="submit" value="Submit my Answer" class="more">
+                </form>
+            </article>
+        </section>
+
+        <section class="testimonials">
+            <h2>Community Feedback</h2>
+            <p>
+                What our Members says
+            </p>
+            <article>
+                <!-- Populate with Javascript -->
+                <figure class="testimonials-author"><img src="images/users/user1.webp" alt="Person1 front picture" loading="lazy" width="300" height="301">
+                <figcaption class="testimonial-author">Richard Feynman
+                Physicist</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos neque nam veniam id officia corporis eos consectetur quod, iste animi! Sit eveniet molestiae nihil enim eligendi harum. Nisi deserunt iusto autem atque, sit ea tenetur quaerat totam numquam, repudiandae eaque, rem eos nihil. Doloremque amet fugit cumque voluptates.</p>
+            </article>
+        </section>
+        <section class="CTA">
+            <h2>Interested? Register</h2>
+            <form action="thanks.html" method="get" class="register">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>Fullname<input type="text" name="fullname" required></label>
+                    <label>Email<input type="email" name="email" required></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Library Preferences</legend>
+                    <div>What is your primary interest?</div>
+                        <label for="astronomy"><input type="radio" name="interest" id="astronomy">Astronomy</label>
+                        <label for="biology"><input type="radio" name="interest" id="biology">Biology</label>
+                        <label for="chemistry"><input type="radio" name="interest" id="chemistry">Chemistry</label>
+                        <label for="math"><input type="radio" name="interest" id="math">Mathematics</label>
+                        <label for="physics"><input type="radio" name="interest" id="physics">Physics</label>
+
+                    <div>Your role:</div>
+                    <label><input type="radio" name="role" id="enthusiast">Science Enthusiast</label>
+                    <label><input type="radio" name="role" id="teacher">Teacher</label>
+                    <label><input type="radio" name="role" id="student">Student</label>
+                    <label><input type="radio" name="role" id="researcher">Researcher</label>
+
+                    <div>Mailing Preferences</div>
+                    <label><input type="checkbox" name="newsletter">Receive Daily Formula & Quote via Mail</label>
+                    <label><input type="checkbox" name="newsletter">Get Notified for upcoming Science Events</label>
+                </fieldset>
+                <input type="submit" value="Become a Member of the Library" class="more">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><img src="images/logo-circle.svg" alt="SciSphere Library Logo inside a circle" width="100" height="100"></a>
+        <p>
+            Copyright &copy; <span id="current-year"></span> <strong>SciSphere.</strong>
+            All rights reserved.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="images/icons/facebook.svg" alt="Facebook Logo Icon" width="50" height="50"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/icons/instagram.svg" alt="Instagram Logo Icon" width="50" height="50"></a></li>
+                <li><a href="https://linkedin.com/"><img src="images/icons/linkedin.svg" alt="LinkedIn Logo Icon" width="50" height="50"></a></li>
+                <li><a href="Youtube.com"><img src="images/icons/youtube.svg" alt="Youtube Logo Icon" width="50" height="50"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
