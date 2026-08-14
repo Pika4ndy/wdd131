@@ -42,13 +42,16 @@
     </header>
     <main>
         <section class="hero-banner">
-            <img src="images/hero-image.webp" alt="Hero image" class="hero-image" loading="lazy" width="300" height="300">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/hero-image-wide.webp">
+                <source media="(min-width: 900px)" srcset="images/hero-image-wide.webp">
+                <img src="images/hero-image.webp" alt="Hero image" class="hero-image" loading="lazy" width="600" height="400"></picture>
             <div class="block-over">
                 <h2>Welcome to SciSphere Library</h2>
                 <p>A place where science lovers gather, read and share</p>
                 <div class="buttons-box">
                     <a href="contact.html" class="primary-button button">Contact Us</a>
-                    <a href="about.html" class="secondary-button button">Learn More</a>
+                    <a href="about.html" class="secondary-button button">About SciSphere</a>
                 </div>
             </div>
         </section>
@@ -138,7 +141,7 @@
                     </div>
                     <h4>Template blog dicussion</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam provident vitae accusantium, ex tempore reiciendis consectetur ad, cupiditate maxime illo magni adipisci distinctio, et at dolore consequuntur aliquam voluptates expedita!</p>
-                    <a href="catalog/discussions.html">Read More</a> <!-- Arrow right ::after -->
+                    <a href="catalog/discussions.html">Read this Discussion</a> <!-- Arrow right ::after -->
                 </article>
                 <a href="catalog/index.html" class="more button">Other Community Discussions</a>
             </article>
@@ -154,7 +157,7 @@
                 </p>
                     <div class="buttons-box">
                         <a href="./catalog/formulas.html" class="secondary-button button">Other Formulas</a>
-                        <a href="./catalog/formulas.html#id" class="primary-button button">Learn More</a>
+                        <a href="./catalog/formulas.html#id" class="primary-button button">About this formula</a>
                     </div>
             </article>
 
@@ -166,7 +169,7 @@
                 </p>
                 <div class="buttons-box">
                     <a href="./catalog/quotes.html" class="secondary-button button">Other Quotes</a>
-                    <a href="./catalog/quotes.html#id" class="primary-button button">Learn More</a>
+                    <a href="./catalog/quotes.html#id" class="primary-button button">About this Quote</a>
                 </div>
             </article>
 

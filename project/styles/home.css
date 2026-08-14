@@ -71,6 +71,7 @@ h2 + p {
 .hero-banner {
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-banner .block-over{
