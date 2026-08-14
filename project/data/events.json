@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "id": "event-01",
+      "date": "October 2026",
+      "name": "GitHub Universe 2026",
+      "category": "Software Development",
+      "description": "Annual developer conference highlighting the future of software engineering, AI-driven development workflows, and platform updates.",
+      "image": "images/events/event1.webp"
+    },
+    {
+      "id": "event-02",
+      "date": "November 2026",
+      "name": "Microsoft Ignite 2026",
+      "category": "Cloud & Enterprise Tech",
+      "description": "Premier event for developers and engineers featuring deep dives into .NET, enterprise architecture, and cloud services.",
+      "image": "images/events/event2.webp"
+    },
+    {
+      "id": "event-03",
+      "date": "November 30 - December 4, 2026",
+      "name": "AWS re:Invent 2026",
+      "category": "Cloud Computing",
+      "description": "Massive technical learning conference hosted by Amazon Web Services showcasing cloud infrastructure, scalable architecture, and machine learning tooling.",
+      "image": "images/events/event3.webp"
+    },
+    {
+      "id": "event-04",
+      "date": "December 2026",
+      "name": "PyData Global 2026",
+      "category": "Data Science & Python",
+      "description": "International community-driven event focusing on Python data ecosystems, tooling, and data engineering practices.",
+      "image": "images/events/event2.webp"
+    },
+    {
+      "id": "event-05",
+      "date": "December 2026",
+      "name": "The Game Awards 2026",
+      "category": "Gaming",
+      "description": "Annual global celebration recognizing creative and technical excellence in the video game industry, featuring major upcoming industry announcements and trailers.",
+      "image": "images/events/event1.webp"
+    }
+  ]
+}

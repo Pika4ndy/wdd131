@@ -1,0 +1,34 @@
+{
+  "quizzes": [
+    {
+      "id": "quiz-01",
+      "question": "When was General Relativity published?",
+      "answer": "1915",
+      "category": "Physics"
+    },
+    {
+      "id": "quiz-02",
+      "question": "What is the chemical symbol for Gold?",
+      "answer": "Au",
+      "category": "Chemistry"
+    },
+    {
+      "id": "quiz-03",
+      "question": "Who formulated the three laws of motion?",
+      "answer": "Isaac Newton",
+      "category": "Physics"
+    },
+    {
+      "id": "quiz-04",
+      "question": "In what year did the Apollo 11 mission land on the Moon?",
+      "answer": "1969",
+      "category": "Astronomy"
+    },
+    {
+      "id": "quiz-05",
+      "question": "What is the value of Pi rounded to two decimal places?",
+      "answer": "3.14",
+      "category": "Mathematics"
+    }
+  ]
+}

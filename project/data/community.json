@@ -1,0 +1,34 @@
+{
+  "discussions": [
+    {
+      "id": "disc-01",
+      "title": "Wave-Particle Duality in Everyday Labs",
+      "subject": "Physics",
+      "category": "Experiment",
+      "author": "Dr. Aris Thorne",
+      "date": "14 August 2026",
+      "text": "We recently tested single-photon interference patterns using an improvised double-slit setup. The results remarkably mirrored textbook quantum mechanical expectations, proving that even modest setups can capture wave-particle duality clearly.",
+      "image": "images/discussions/discussion1.webp"
+    },
+    {
+      "id": "disc-02",
+      "title": "Prime Numbers in Cryptographic Key Exchange",
+      "subject": "Mathematics",
+      "category": "Theory",
+      "author": "Clara Montgomery",
+      "date": "10 August 2026",
+      "text": "Exploring how large prime numbers form the unbreakable backbone of modern RSA encryption. Simple modular arithmetic yields profound security implications when scaled up exponentially.",
+      "image": "images/discussions/discussion1.webp"
+    },
+    {
+      "id": "disc-03",
+      "title": "Green Chemical Catalysts for Biodegradation",
+      "subject": "Chemistry",
+      "category": "Anecdote",
+      "author": "Prof. Julian Vance",
+      "date": "05 August 2026",
+      "text": "An accidental spill of plant-based enzymes accelerated polymer breakdown by over 40% in our lab. Sustainable chemistry continues to offer elegant solutions to stubborn waste problems.",
+      "image": "images/discussions/discussion1.webp"
+    }
+  ]
+}

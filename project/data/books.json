@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": "book-01",
+      "title": "Cosmos & Continuum",
+      "author": "Dr. Aris Thorne",
+      "field": "Astronomy",
+      "description": "An illuminating journey through the evolution of galaxies, black hole thermodynamics, and the large-scale structure of the universe.",
+      "price": 29.99,
+      "image": "images/books/book1.webp",
+      "status": "Available"
+    },
+    {
+      "id": "book-02",
+      "title": "Principles of Quantum Mechanics",
+      "author": "Dr. Elena Rostova",
+      "field": "Physics",
+      "description": "A comprehensive yet accessible guide to wave-particle duality, Schrödinger's equations, and modern quantum computing principles.",
+      "price": 34.50,
+      "image": "images/books/book2.webp",
+      "status": "Available"
+    },
+    {
+      "id": "book-03",
+      "title": "The Organic Synthesist",
+      "author": "Prof. Julian Vance",
+      "field": "Chemistry",
+      "description": "Exploring complex molecular pathways, chemical bonding theories, and green chemistry innovations for modern laboratories.",
+      "price": 27.99,
+      "image": "images/books/book1.webp",
+      "status": "Reserved"
+    },
+    {
+      "id": "book-04",
+      "title": "Discrete Mathematics in Action",
+      "author": "Clara Montgomery",
+      "field": "Mathematics",
+      "description": "Graph theory, cryptographic algorithms, and combinatorial logic explained through real-world computational problem-solving.",
+      "price": 24.00,
+      "image": "images/books/book2.webp",
+      "status": "Available"
+    }
+  ]
+}

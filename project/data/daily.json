@@ -1,0 +1,66 @@
+{
+  "formulas": [
+    {
+      "id": "form-01",
+      "content": "ax^2 + bx + c = 0",
+      "author": "Unknown",
+      "date": "1800"
+    },
+    {
+      "id": "form-02",
+      "content": "E = mc^2",
+      "author": "Albert Einstein",
+      "date": "1905"
+    },
+    {
+      "id": "form-03",
+      "content": "F = G * ((m_1 * m_2) / r^2)",
+      "author": "Isaac Newton",
+      "date": "1687"
+    },
+    {
+      "id": "form-04",
+      "content": "e^{i\\pi} + 1 = 0",
+      "author": "Leonhard Euler",
+      "date": "1748"
+    },
+    {
+      "id": "form-05",
+      "content": "PV = nRT",
+      "author": "Benoît Paul Émile Clapeyron",
+      "date": "1834"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "quote-01",
+      "content": "Rien ne se crée, rien ne se perd, tout se tranforme",
+      "author": "Antoine de Lavoisier",
+      "date": "1789"
+    },
+    {
+      "id": "quote-02",
+      "content": "If I have seen further it is by standing on the shoulders of Giants.",
+      "author": "Isaac Newton",
+      "date": "1675"
+    },
+    {
+      "id": "quote-03",
+      "content": "Science is what we understand well enough to explain to a computer. Art is everything else we do.",
+      "author": "Donald Knuth",
+      "date": "1977"
+    },
+    {
+      "id": "quote-04",
+      "content": "Imagination is more important than knowledge.",
+      "author": "Albert Einstein",
+      "date": "1931"
+    },
+    {
+      "id": "quote-05",
+      "content": "Nothing in life is to be feared, it is only to be understood.",
+      "author": "Marie Curie",
+      "date": "1923"
+    }
+  ]
+}

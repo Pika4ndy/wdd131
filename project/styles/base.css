@@ -129,7 +129,7 @@ section h2 {
 }
 
 /* --- HAMBURGER MENU --- */
-@media screen and (max-width:799px) {
+@media screen and (max-width:899px) {
     
     header nav {
         position: fixed;
