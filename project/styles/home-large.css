@@ -1,8 +1,4 @@
 @media screen and (min-width: 900px) {
-    main {
-        width: 80%;
-        max-width: 1500px;
-    }
 
     /* --- HERO BANNER --- */
     .hero-banner {
