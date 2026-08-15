@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #FEE302;
+    --faint-primary: #ffd700;
+    --clear-primary-color: #ffe;
+    --secondary-color: #001A72;
+    --faint-secondary: #273d87;
+    --accent-color: #510087;
+    --text-on-primary: #000;
+    --text-on-secondary: #fff;
+    --valid-color: #008000;
+    --error-color: #ff0000;
+    --heading-font: "Merriweather", Cambria, Georgia, serif;
+    --body-font: "Noto Sans", Helvetica, Arial, sans-serif;
+    --algebra-font: "Cambria Math", Cambria, sans-serif;
+    --shadow: 0 6px 12px #555;
+    --elevated-shadow: 3px 10px 15px #555;
+    --buttons-shadow: inset 2px 2px 5px 0px #eee,
+    5px 5px 10px #aaa;
+    --radius: 12px;
+}
+
+section {
+    border: none;
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 600px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: all 300ms ease;
+    flex: 1 1 auto;
+}
+
+article img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+.event-info {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event-info h3, .event-info p {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.event-date, .event-category {
+    display: inline-block;
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+}
+
+
+@media screen and (min-width:900px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+}
