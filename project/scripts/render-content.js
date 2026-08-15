@@ -13,7 +13,14 @@ const discussionContent = document.querySelector(".discussion article p");
 
 
 // Daily Content
+const formulaText = document.querySelector(".formula-text");
+const formulaAuthor = document.querySelector(".formula-author");
+const quoteText = document.querySelector(".quote-text");
+const quoteAuthor = document.querySelector(".quote-author");
 
+// Daily Quiz
+const quizLabel = document.querySelector(".quizLabel");
+const quizInput = document.getElementById("quiz");
 
 async function fetchData(jsonPath) {
     try {
@@ -158,21 +165,46 @@ function displayRecentDiscusion(discussionsList) {
 }
 
 function displayDailyContent(dailyContentPromise) {
-    const formulasList = dailyContentPromise["formulas"];
-    const quotesList = dailyContentPromise["quotes"];
-    const dailyRandomizer = localStorage.getItem("todayDailyInfo");
+    const formulasList = dailyContentPromise.formulas;
+    const quotesList = dailyContentPromise.quotes;
+    const dailyRandomizer = JSON.parse(localStorage.getItem("todayDailyInfo"));
+    
 
     let formulaIndex = Math.floor(dailyRandomizer["formula"] * formulasList.length);
     let quoteIndex = Math.floor(dailyRandomizer["quote"] * quotesList.length);
+    
 
     const formula = formulasList[formulaIndex];
-    const quote = quoteList[quoteIndex];
+    const quote = quotesList[quoteIndex];
+    
 
+    if (formulaText) {
+        try {
+            // KaTeX transforme la chaîne LaTeX en HTML propre et stylisé
+            katex.render(formula["content"], formulaText, {
+                displayMode: false, // true pour une formule centrée seule, false pour du texte en ligne
+                throwOnError: false // évite de bloquer la page si une syntaxe échoue
+            });
+        } catch (e) {
+            console.error("Erreur de rendu KaTeX :", e);
+            formulaText.textContent = formula["content"]; // Solution de repli
+        }
+    }
+    formulaAuthor.textContent = `${formula["author"]}, ${formula["date"]}`
+
+    quoteText.textContent = quote["content"]
+    quoteAuthor.textContent = `${quote["author"]}, ${quote["date"]}`
 
 }
 
 function displayRandomQuiz(quizzesArray) {
+    const dailyRandomizer = JSON.parse(localStorage.getItem("todayDailyInfo"));
+
+    const quizIndex = Math.floor(dailyRandomizer["quiz"] * quizzesArray.length);
     
+    const selectedQuiz = quizzesArray[quizIndex];
+
+    quizLabel.textContent = selectedQuiz["question"];
 }
 
 fetchData("./data/books.json");
