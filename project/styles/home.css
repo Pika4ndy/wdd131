@@ -325,7 +325,7 @@ h2 + p {
 }
 
 .formula-text {
-    font-family: --algebra-font;
+    font-family: var(--algebra-font);
     font-size: 2.5rem;
 }
 .formula-author {
