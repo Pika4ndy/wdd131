@@ -1,0 +1,21 @@
+@media screen and (min-width:900px) {
+    main {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card:nth-child(1) {
+        flex: 2 1 300px;
+    }
+
+    .card:nth-child(2) {
+        flex: 1 1 200px;
+    }
+}

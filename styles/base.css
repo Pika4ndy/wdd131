@@ -19,6 +19,10 @@
     font-family: var(--body-font);
 }
 
+body {
+    transition: all 300ms ease-in-out;
+}
+
 h1, h2, h3 {
     font-family: var(--heading-font);
 }
@@ -34,7 +38,6 @@ header {
 
 header nav {
     background-color: var(--secondary-color);
-    padding: 1rem;
 }
 
 header ul {
@@ -49,21 +52,27 @@ header a {
     color: var(--text-on-secondary);
     font-family: var(--heading-font);
     text-decoration: none;
-    transition: background 250ms ease-in;
+    transition: background 250ms ease;
+    height: 100%;
 }
 
-header a:hover, header a:focus {
-    text-decoration: underline;
+header li:hover, header li:focus{
     background-color: var(--primary-color-alt);
+}
+
+header li:hover a, header li:focus a {
+    text-decoration: underline;
     color: var(--text-on-primary);
 }
 
 header li {
+    padding: 1rem;
     flex: 1 1 auto;
+    transition: all 250ms ease;
+    cursor: pointer;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -71,8 +80,7 @@ footer {
 }
 
 main {
-    margin: 0 auto 75px;
-    min-width: 900px;
+    max-width: 900px;
 }
 
 h1 {
@@ -106,17 +114,55 @@ figcaption {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-color-alt);
+}
+
 /* Classes */
+
+.to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    /* transform: translate(-50%); */
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    width: fit-content;
+    height: auto;
+    border-radius: 40%;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 5px #444,
+    inset 1px 1px var(--text-on-primary);
+    transition: transform 250ms ease 100ms;
+}
+
+.to-top:hover {
+    transform: scale(1.2);
+}
+
+.to-top a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card-container {
-    display: grid;
+    display: flex;
     justify-content: center;
     margin: 1rem;
-    height: 100%;
-    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
 }
 
 .card {
-    border: 2px solid #808080;
+    border: 1px solid #808080;
     border-radius: 1rem;
     margin: 5px;
     padding: 0;
@@ -154,6 +200,16 @@ figcaption {
     margin: 1rem 3rem;
     text-align: left;
     line-height: 1.5rem;
+}
+
+.web-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.web-list article {
+    flex: 1 0 300px;
 }
 
 .hidden-unimportant {

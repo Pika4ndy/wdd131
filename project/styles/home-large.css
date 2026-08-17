@@ -4,16 +4,20 @@
     .hero-banner {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .hero-banner img {
+    .hero-image {
         position: relative;
         top: 0;
         left: 0;
         transform: none;
-        order: 10;
-        flex: 0 0 auto;
+        flex: 0 2 auto;
+        min-width: 500px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .hero-banner .block-over {
