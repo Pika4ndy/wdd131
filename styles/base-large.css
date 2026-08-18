@@ -18,4 +18,8 @@
     .card:nth-child(2) {
         flex: 1 1 200px;
     }
+
+    .card:nth-child(3) {
+        flex: 1 0 800px;
+    }
 }
